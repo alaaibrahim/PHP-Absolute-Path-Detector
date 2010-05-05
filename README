@@ -1,0 +1,1 @@
+A simple script to parse through a project directory to look if there is a direct use of Absolute paths in (require|include)(_once)?,file_(get|put)_contens, and fopen.
