@@ -59,10 +59,8 @@ function get_file_path($func,$params) {
   return $matchs[2];
 }
 function lookForPaths($block) {
-  $x = '\\(';
   if (preg_match_all("/(fopen|file_get_contents|file_put_contents|include|include_once|require|require_once)((\s|\\().*?);/s",$block,$matchs)) {
     return $matchs;
   }
   return false;
 }
-//ParsePHPFile('/home/ala/work/mail.trunk/mail2/etc/Configuration.php');
